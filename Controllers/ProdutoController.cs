@@ -47,7 +47,7 @@ namespace Estoquei.Controllers
         // GET: Produto/Create
         public IActionResult Create()
         {
-            ViewData["TipoProdutoId"] = new SelectList(_context.TipoProduto, "Id", "Id");
+            ViewData["TipoProdutoId"] = new SelectList(_context.TipoProduto, "Id", "NomeProduto");
             return View();
         }
 

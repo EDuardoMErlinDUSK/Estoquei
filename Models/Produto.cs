@@ -26,7 +26,7 @@ namespace Estoquei.Models
         [Display(Name = "Status do produto")]
         public bool StatusProduto { get; set; }
 
-        [ForeignKey("TipoProduto")]
+        [ForeignKey("TipoProdutoId")]
         public int TipoProdutoId { get; set;}
         public TipoProduto? TipoProduto { get; set; }
 
