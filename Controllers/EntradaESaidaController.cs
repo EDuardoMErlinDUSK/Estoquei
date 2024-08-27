@@ -47,7 +47,7 @@ namespace Estoquei.Controllers
         // GET: EntradaESaida/Create
         public IActionResult Create()
         {
-            ViewData["ProdutoId"] = new SelectList(_context.Produto, "Id", "id");
+            ViewData["ProdutoId"] = new SelectList(_context.Produto, "Id", "Id");
             return View();
         }
 
